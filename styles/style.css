@@ -149,7 +149,45 @@ header {
   line-height: 40px;
 }
 
-/* header styles */
+/* facts styles */
+#facts {
+  margin-top: 8rem;
+}
+.fact-tittle {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.fact-description {
+  font-size: 1rem;
+  line-height: 26px;
+  padding-right: 62rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+.facts-card-wrapper {
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.facts-card {
+  padding: 2rem;
+  border: 1px solid #ff900e;
+  text-align: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+}
+.facts-card h4 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.facts-card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
 /* header styles */
 /* header styles */
 /* header styles */
@@ -181,18 +219,21 @@ footer {
   #experience {
     grid-template-columns: 1fr;
   }
-}
-
-/* Responsive Media Query for Medium Device */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  #feature {
-    flex-direction: column-reverse;
-    text-align: center;
-    gap: 1rem;
-    margin-top: 2rem;
+  .exp-img {
+    padding: 0;
   }
-  .feature-img {
-    grid-template-columns: 1fr;
+  .exp-year {
+    left: 0;
+    bottom: -9rem;
+  }
+  #facts {
+    margin-top: 13rem;
+    text-align: center;
+  }
+  .fact-description {
+    padding: 0;
+  }
+  .facts-card-wrapper {
     gap: 1rem;
   }
 }
